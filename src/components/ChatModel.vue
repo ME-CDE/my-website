@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     anotherPage(value) {
-      window.location.replace(value);
+      window.location.href = value;
     },
   },
 };
