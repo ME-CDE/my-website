@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     anotherPage(value) {
-      window.location.href = value;
+      window.location.replace(value);
     },
   },
 };

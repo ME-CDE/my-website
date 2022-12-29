@@ -15,7 +15,8 @@ const dark = {
     buttonText:"#f0f2fa",
     blue:"#f0f2fa",
     mode:"#111b33",
-    loader:"#f0f2fa"
+    loader:"#f0f2fa",
+    side:"#0d1321"
   }
 }
 
@@ -29,7 +30,8 @@ const light = {
     buttonText:"#00428c",
     blue:"#2196F3",
     mode:"#fff",
-    loader:"#f0f2fa"
+    loader:"#f0f2fa",
+    side:"#fff"
   }
 }
 

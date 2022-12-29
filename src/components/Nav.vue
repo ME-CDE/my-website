@@ -22,7 +22,7 @@
     </div>
     <div class="side-container" v-if="side" @click.self="side= false"></div>
     <transition name="side">
-      <div class="side bg-white d-sm-none elevation-20" v-if="side">
+      <div class="side bg-side text-text d-sm-none elevation-20" v-if="side">
         <v-icon
           icon="mdi-close"
           size="x-large"
