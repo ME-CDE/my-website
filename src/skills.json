@@ -1,0 +1,46 @@
+[
+  {
+    "name":"Javascript",
+    "path":"mdi-language-javascript"
+  },
+  {
+    "name":"Html 5",
+    "path":"mdi-language-html5"
+  },
+  {
+    "name":"Css 3",
+    "path":"mdi-language-css3"
+  },
+  {
+    "name":"Bootstrap 5",
+    "path":"mdi-bootstrap"
+  },
+  {
+    "name":"Sass",
+    "path":"mdi-sass"
+  },
+  {
+    "name":"Taillwind css",
+    "path":"mdi-tailwind"
+  },
+  {
+    "name":"React JS",
+    "path":"mdi-react"
+  },
+  {
+    "name":"Vue JS",
+    "path":"mdi-vuetify"
+  },
+  {
+    "name":"Vuetify",
+    "path":"mdi-vuetify"
+  },
+  {
+    "name":"Firebase",
+    "path":"mdi-firebase"
+  },
+  {
+    "name":"Git",
+    "path":"mdi-git"
+  }
+]

@@ -1,30 +1,63 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+    <v-main class="text-text">
+      <v-btn
+        :icon="this.dark_mode ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+        elevation="15"
+        @click="toggleTheme"
+        class="mode-btn bg-mode"
+      ></v-btn>
+      <Nav/>
+      <Me />
+      <Projects />
+      <Section3 />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Me from "./components/Me.vue";
+import Nav from './components/Nav.vue';
+import Projects from "./components/Projects.vue";
+import Section3 from "./components/Section3.vue";
+export default {
+  components: { Me, Projects, Section3, Nav },
+  name: "App",
+  data: () => ({
+    dark_mode: false,
+    prevScrollpos: 0,
+  }),
+  methods: {
+    toggleTheme() {
+      this.dark_mode = !this.dark_mode;
+      sessionStorage.setItem("theme", this.dark_mode ? "dark" : "light");
+      this.$vuetify.theme.name = this.dark_mode ? "dark" : "light";
+    },
+    themeOnMount() {
+      const theme = sessionStorage.getItem("theme")
+        ? sessionStorage.getItem("theme")
+        : "light";
+      if (theme === "dark") {
+        this.dark_mode = true;
+      }
+      this.$vuetify.theme.name = theme;
+    },
+    onScroll() {
+      let currentScrollPos = window.pageYOffset;
+      console.log(currentScrollPos, this.prevScrollpos);
+      if (this.prevScrollpos > currentScrollPos) {
+        document.getElementById("bar").style.top = "0";
+      } else {
+        document.getElementById("bar").style.top = "-70px";
+      }
+      this.prevScrollpos = currentScrollPos;
+    },
+  },
+  mounted() {
+    this.themeOnMount();
+    window.addEventListener("scroll", this.onScroll);
+  },
+};
+</script>
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<style lang="scss"></style>
