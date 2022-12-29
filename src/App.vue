@@ -7,7 +7,7 @@
         @click="toggleTheme"
         class="mode-btn bg-mode"
       ></v-btn>
-      <Nav/>
+      <Nav />
       <Me />
       <Projects />
       <Section3 />
@@ -17,7 +17,7 @@
 
 <script>
 import Me from "./components/Me.vue";
-import Nav from './components/Nav.vue';
+import Nav from "./components/Nav.vue";
 import Projects from "./components/Projects.vue";
 import Section3 from "./components/Section3.vue";
 export default {
@@ -45,12 +45,13 @@ export default {
     onScroll() {
       let currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos, this.prevScrollpos);
-      if (this.prevScrollpos > currentScrollPos) {
+      if (this.prevScrollpos - currentScrollPos >= 60) {
         document.getElementById("bar").style.top = "0";
-      } else {
+        this.prevScrollpos = currentScrollPos;
+      } else if (currentScrollPos - this.prevScrollpos >= 60) {
         document.getElementById("bar").style.top = "-70px";
+        this.prevScrollpos = currentScrollPos;
       }
-      this.prevScrollpos = currentScrollPos;
     },
   },
   mounted() {
