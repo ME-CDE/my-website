@@ -1,7 +1,6 @@
 <template>
   <div id="bar">
-    <div class="nav-bar bg-nav">
-      <v-container class="bar-content w-100">
+    <v-container class="nav-bar bg-nav">
         <p class="link title logo" @click="goToTop()">Godswill Anwuli</p>
         <div
           class="d-none d-sm-flex align-center font-weight-medium text-subtitle1"
@@ -18,8 +17,7 @@
           class="d-flex d-sm-none"
           @click="side = true"
         ></v-icon>
-      </v-container>
-    </div>
+    </v-container>
     <div class="side-container" v-if="side" @click.self="side= false"></div>
     <transition name="side">
       <div class="side bg-side text-text d-sm-none elevation-20" v-if="side">

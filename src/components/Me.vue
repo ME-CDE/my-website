@@ -2,7 +2,7 @@
   <v-container class="max-w-xl">
     <div class="w-100 section-1">
       <div class="imgdiv">
-        <div class="img bg-buttonBg rounded-shaped elevation-12"></div>
+        <img class="img bg-buttonBg rounded-circle elevation-12" src="/assets/myprofiepic.jpg"/>
         <div class="name-div mt-5 pl-3">
           <h1 class="text-h4 font-weight-bold">Godswill Anwuli</h1>
           <p class="font-weight-medium">Javascript | web developer | Nigeria</p>

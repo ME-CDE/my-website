@@ -27,7 +27,7 @@ const light = {
     background:"#f0f2fa",
     text:"#030713",
     buttonBg:"#fff",
-    buttonText:"#00428c",
+    buttonText:"#111b33",
     blue:"#2196F3",
     mode:"#fff",
     loader:"#f0f2fa",
