@@ -21,11 +21,6 @@
           size="large"
           class="text-buttonText bg-buttonBg mt-5"
           append-icon="mdi-download"
-          @click="
-            anotherPage(
-              'https://export-download.canva.com/Q2SKc/DAFWLLQ2SKc/20/0-44380539051.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20221229%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221229T032321Z&X-Amz-Expires=74562&X-Amz-Signature=822248c1088d7998ff2333bbf74ba7b7b5a0ad77e00cf461f837a54c215a929e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Simple%2520Professional%2520Software%2520Engineer%2520Resume.pdf&response-expires=Fri%2C%2030%20Dec%202022%2000%3A06%3A03%20GMT'
-            )
-          "
         >
           <p class="d-md-none"><span class="my">my</span> cv</p>
           <p class="d-none d-md-inline-block">my resume</p>
