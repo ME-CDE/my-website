@@ -45,10 +45,10 @@ export default {
     onScroll() {
       let currentScrollPos = window.pageYOffset;
       console.log(currentScrollPos, this.prevScrollpos);
-      if (this.prevScrollpos - currentScrollPos >= 60) {
+      if (this.prevScrollpos - currentScrollPos >= 40) {
         document.getElementById("bar").style.top = "0";
         this.prevScrollpos = currentScrollPos;
-      } else if (currentScrollPos - this.prevScrollpos >= 60) {
+      } else if (currentScrollPos - this.prevScrollpos >= 40) {
         document.getElementById("bar").style.top = "-70px";
         this.prevScrollpos = currentScrollPos;
       }
