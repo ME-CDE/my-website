@@ -4,7 +4,8 @@
       <div class="imgdiv">
         <img
           class="img bg-buttonBg rounded-circle elevation-12"
-          src="/assets/myprofiepic.jpg"
+          src="https://res.cloudinary.com/dqfcqbigt/image/upload/c_scale,w_500/v1675116519/my-site-project/20230110_180427_o8fprs.jpg"
+          alt="my-image"
         />
         <div class="name-div mt-5 pl-3">
           <h1 class="text-h4 font-weight-bold">Godswill Anwuli</h1>
@@ -16,20 +17,20 @@
       >
         <p class="about-me text-h5">About Me</p>
         <p>
-          I am Frontend developer who loves writing codes and learning about new
+          I'm a frontend developer who loves writing codes and learning about new
           tech. I use javascript tools like react, vue, firebase e.t.c and some
           other tools to bring ideas to reality. Let's connect and collabrate.
         </p>
-        
-          <v-btn
-            size="large"
-            class="text-buttonText bg-buttonBg mt-5"
-            append-icon="mdi-download"
-            @click="DownloadFile('GODSWILL-ANWULI-RESUME.PDF')"
-          >
-            <p class="d-md-none"><span class="my">my</span> cv</p>
-            <p class="d-none d-md-inline-block">my resume</p>
-          </v-btn>
+
+        <v-btn
+          size="large"
+          class="text-buttonText bg-buttonBg mt-5"
+          append-icon="mdi-download"
+          @click="DownloadFile('GODSWILL-ANWULI-RESUME.PDF')"
+        >
+          <p class="d-md-none"><span class="my">my</span> cv</p>
+          <p class="d-none d-md-inline-block">my resume</p>
+        </v-btn>
 
         <v-btn
           size="large"
