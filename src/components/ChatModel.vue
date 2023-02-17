@@ -8,7 +8,7 @@
           color="background"
           @click="
             anotherPage(
-              'https://api.whatsapp.com/send?phone=2349038146200&text=https://ganwuli.netlify.app'
+              'https://api.whatsapp.com/send?phone=2349038146200&text=Hi'
             )
           "
         >
