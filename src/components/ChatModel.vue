@@ -6,14 +6,17 @@
           block
           size="x-large"
           color="background"
-          @click="
-            anotherPage(
-              'https://api.whatsapp.com/send?phone=2349038146200&text=Hi'
-            )
-          "
         >
-          <p class="mr-4">Whatsapp</p>
-          <v-icon icon="mdi-whatsapp" size="large" class="ml-5"></v-icon>
+          <ShareNetwork
+            network="whatsapp"
+            url="https://ganwuli.netlify.app"
+            title="God'swill Anwuli Portfolio"
+            description="A site to get to know Godswill and what he does."
+            media="https://res.cloudinary.com/dqfcqbigt/image/upload/c_scale,w_500/v1675116519/my-site-project/20230110_180427_o8fprs.jpg"
+          >
+            <p class="mr-4">Whatsapp</p>
+            <v-icon icon="mdi-whatsapp" size="large" class="ml-5"></v-icon>
+          </ShareNetwork>
         </v-btn>
         <v-btn
           block

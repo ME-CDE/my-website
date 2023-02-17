@@ -27,6 +27,25 @@ export default {
     dark_mode: false,
     prevScrollpos: 0,
   }),
+  metaInfo() {
+    return {
+      title: "God'swill Anwuli Portfolio",
+      meta: [
+        { name: "description", content: "A site to get to know Godswill and what he does." },
+        { property: "og:title", content: "God'swill Anwuli Portfolio" },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        { property: "og:url", content: "https://ganwuli.netlify.app" },
+        {
+          property: "og:image",
+          content:
+            "https://res.cloudinary.com/dqfcqbigt/image/upload/c_scale,w_500/v1675116519/my-site-project/20230110_180427_o8fprs.jpg",
+        },
+      ],
+    };
+  },
   methods: {
     toggleTheme() {
       this.dark_mode = !this.dark_mode;
